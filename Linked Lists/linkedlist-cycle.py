@@ -18,3 +18,6 @@ class Solution:
                 return True
         return False
 
+# Time: O(n)
+# Space: O(1), there can be one O(n) solution using hashmap to mark visited nodes
+
