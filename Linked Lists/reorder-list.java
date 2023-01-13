@@ -1,3 +1,6 @@
+// Leetcode 143
+// Reorder Linked List
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -28,7 +31,7 @@ class Solution {
         while(secondList != null) {
             ListNode temp = secondList.next;
             secondList.next = prevSecond;
-            prevSecond = secondList;
+            prevSecond = secondList;`
             secondList = temp;
         }
         
