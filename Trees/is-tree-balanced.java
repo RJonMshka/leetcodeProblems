@@ -39,7 +39,7 @@ public class LC110 {
         int leftHeight = 1 + Math.max(leftNodeBalance.heightLeft, leftNodeBalance.heightRight);
         int rightHeight = 1 + Math.max(rightNodeBalance.heightLeft, rightNodeBalance.heightRight);
 
-        return new Tuple(leftHeight, rightHeight, (Math.abs(leftHeight - rightHeight) <= 1 && leftNodeBalance.balanced && rightNodeBalance.balanced))
+        return new Tuple(leftHeight, rightHeight, (Math.abs(leftHeight - rightHeight) <= 1 && leftNodeBalance.balanced && rightNodeBalance.balanced));
     }
 
     public boolean isBalanced(TreeNode root) {
