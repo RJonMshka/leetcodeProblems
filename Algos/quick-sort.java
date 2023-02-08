@@ -21,17 +21,17 @@ public class QuickSort {
     private int partition(int[] arrayToSort, int low, int high) {
         int pivot = arrayToSort[high];
 
-        int left = low - 1;
+        int left = low;
 
         for(int i = low; i <= high - 1; i++) {
             if(arrayToSort[i] < pivot) {
-                left++;
                 this.swapItems(arrayToSort, left, i);
+                left++;
             }
         }
 
-        this.swapItems(arrayToSort, left + 1, high);
-        return left + 1;
+        this.swapItems(arrayToSort, left, high);
+        return left;
 
     }
 
